@@ -1,0 +1,24 @@
+{
+  "name": "health-project-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/health-project-backend/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "health-project-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "health-project-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "health-project-backend:build:production"
+        }
+      }
+    }
+  }
+}
