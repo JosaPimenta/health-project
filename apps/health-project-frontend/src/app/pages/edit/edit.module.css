@@ -1,0 +1,13 @@
+.monthContainer {
+  background-color: #b9dbe3;
+  width: 80vh;
+  height: auto;
+  margin-left: 128px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  padding-left: 128px;
+}

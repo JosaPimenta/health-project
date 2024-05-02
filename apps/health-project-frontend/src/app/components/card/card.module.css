@@ -1,0 +1,60 @@
+.trackingBox {
+  background-color: #b9dbe3;
+  width: 312px;
+  min-width: 312px;
+  height: min-content;
+  padding: 24px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.boxTitle {
+  margin-top: 0%;
+}
+
+.row {
+  display: block;
+}
+li {
+  padding-bottom: 12px;
+}
+
+.propertyList {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+  height: 24px;
+}
+
+.propertyItem {
+  margin-bottom: 12px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  padding: 0%;
+  float: right;
+  accent-color: #207486;
+}
+.dropdown {
+  height: 24px;
+  width: 64px;
+  padding: 0%;
+  float: right;
+  border: 1px solid #207486;
+  border-radius: 2px;
+}
+.radio {
+  align-content: flex-end;
+  gap: 12px;
+  width: auto;
+  float: right;
+  align-content: center;
+  accent-color: #207486;
+}
+
+.radio label {
+  font-size: 20px;
+  /* margin: 12px; */
+}

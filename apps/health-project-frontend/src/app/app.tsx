@@ -1,13 +1,19 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { HomePage } from './pages/home/home';
+import { Layout } from './pages/layout/layout';
+import { EditPage } from './pages/edit/edit';
+import { Path } from './utils/path';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="health-project-frontend" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={Path.home} element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path={Path.edit} element={<EditPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

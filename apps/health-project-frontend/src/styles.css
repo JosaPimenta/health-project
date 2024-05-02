@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+h1,
+h2,
+p,
+label {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 200;
+}
+h1 {
+  font-size: 64px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 24px;
+}
+
+p,
+label {
+  font-size: 16px;
+  margin: 0%;
+}
+
+@font-face {
+  font-family: 'Urbanist', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap')
+    format('truetype');
+}
+
+.btn {
+  padding: 24px;
+  background-color: #207486;
+  color: #f8f9fa;
+  border-radius: 48px;
+  float: right;
+  margin: 48px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #fe926c;
+}
+
+.editHeader {
+  padding-left: 128px;
+}
