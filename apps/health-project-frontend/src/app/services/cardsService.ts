@@ -30,13 +30,13 @@ export const setItemValue = (
   label: string,
   value: number | boolean
 ) => {
-  console.log('setItemValue', weekCardMock);
+  // console.log('setItemValue', weekCardMock);
   const card = weekCardMock.find((card) => card.id === id);
-  console.log('setItemValue > card', card);
+  // console.log('setItemValue > card', card);
   const item = card.items.find((item) => item.label === label);
-  console.log('setItemValue > item', item);
+  // console.log('setItemValue > item', item);
   item.value = value;
-  console.log('setItemValue', weekCardMock);
+  // console.log('setItemValue', weekCardMock);
 };
 
 // setItemValue("1", "sleep", false);

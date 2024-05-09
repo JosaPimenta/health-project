@@ -8,11 +8,11 @@ export interface CardProps {
 }
 
 export function Card(props: CardProps) {
-  console.log('Card', {
-    props,
-    isToday: isToday(props.card.date),
-    isYesterday: isYesterday(props.card.date),
-  });
+  // console.log('Card', {
+  //   props,
+  //   isToday: isToday(props.card.date),
+  //   isYesterday: isYesterday(props.card.date),
+  // });
   const weekday = [
     'Sunday',
     'Monday',
@@ -40,7 +40,7 @@ export function Card(props: CardProps) {
   //   console.log(event);
   // };
 
-  console.log('render card', props.card);
+  // console.log('render card', props.card);
 
   return (
     <div className={styles.trackingBox}>

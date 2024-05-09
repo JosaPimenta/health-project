@@ -11,7 +11,7 @@ interface ItemListProp {
 }
 
 export const ItemList = memo((props: ItemListProp) => {
-  console.log('item', props);
+  // console.log('item', props);
 
   // const renderTitle = (key: string, value: any) => {
   //   if (key === 'id' || key === 'date') {
@@ -25,7 +25,7 @@ export const ItemList = memo((props: ItemListProp) => {
   //   }
   // };
 
-  console.log('render item list:', props.items);
+  // console.log('render item list:', props.items);
 
   // function RadioButtons(props) {
   //   const [selectedValue, setSelectedValue] = useState('');
