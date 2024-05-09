@@ -1,11 +1,28 @@
+import { Card } from '@mui/material';
 import { weekCardMock } from './mock';
 
 // get week card from backend
-export const getWeekCards = () => {
+export const getWeekCards = async () => {
   // TODO fetch from backend later: await fetch("");
-  return new Promise<CardModel[]>((resolve, _reject) => {
-    resolve(weekCardMock);
-  });
+  // return new Promise<CardModel[]>((resolve, _reject) => {
+  //   resolve(weekCardMock);
+  // });
+  try {
+    const weekResponse = await fetch('http://localhost:3333/week', {
+      method: 'GET',
+    });
+    const weekData = await weekResponse.json();
+    // if (weekData && weekData.length > 0) {
+    return weekData as CardModel[];
+    // .then((x) => x.json())
+    // .then((value) => {
+    //   console.log('fetch', value);
+    //   setData(value);
+    // });
+  } catch (err) {
+    console.error('err');
+    throw err;
+  }
 };
 
 export const setItemValue = (

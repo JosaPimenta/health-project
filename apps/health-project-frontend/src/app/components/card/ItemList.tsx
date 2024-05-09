@@ -61,7 +61,6 @@ export const ItemList = memo((props: ItemListProp) => {
                   name={item.label}
                   id={item.label}
                   value={item.value as number}
-                  // TODO get/handle the selected
                 >
                   <option value={1}>0.5lt</option>
                   <option value={2}>1lt</option>
@@ -72,8 +71,6 @@ export const ItemList = memo((props: ItemListProp) => {
               )}
               {item.type === 'radio' && (
                 <div className={styles.radio}>
-                  {/* TODO get handle the selected */}
-
                   {[
                     { icon: '😡', id: 1 },
                     { icon: '😢', id: 2 },

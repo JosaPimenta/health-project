@@ -5,8 +5,17 @@
 
 import express from 'express';
 import * as path from 'path';
+import './util/firebaseAdmin';
+import { setupHandlers } from './handlers';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
+
+app.use(express.json()); // to support JSON-encoded bodies
+app.use(express.urlencoded()); // to support URL-encoded bodies
+
+setupHandlers(app);
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 

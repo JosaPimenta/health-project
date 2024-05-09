@@ -3,6 +3,12 @@ import { HomePage } from './pages/home/home';
 import { Layout } from './pages/layout/layout';
 import { EditPage } from './pages/edit/edit';
 import { Path } from './utils/path';
+// import { initializeApp } from 'firebase/app';
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+  //...
+};
 
 export function App() {
   return (
